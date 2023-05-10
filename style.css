@@ -1,0 +1,385 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#topo{
+    color: black;
+    background-color: #0077B6;
+    padding: 10px;
+    border-radius: 15px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+
+#rede{
+    margin: 10px;
+}
+
+.produtos-area{
+    background-image: linear-gradient( to bottom, white, #F5F5F5);
+}
+
+
+#twit{
+    margin: 10px;
+
+}
+
+#face{
+    margin: 10px;
+}
+
+#insta{
+    margin: 10px;
+}
+
+#barra{
+    text-align: center;
+    width: 500px;
+    border-radius: 15px;
+    border: solid #000 3px;
+    margin-left: 5px;
+}
+
+#carrinho{
+    border: none;
+    background: none;
+    color: #263f70;
+    margin-left: 40px;
+    width: 10px;
+
+}
+
+.py-5{
+    background-color: #DCE0DD; 
+}
+
+header{
+    height: 100px;
+    background-image: linear-gradient(#F5F5F5, #DCE0DD)
+}
+
+header a img{
+    width: 100px;
+    height: 100px;
+    margin-right: 50px; 
+}
+
+.busca{
+    border-radius: 15px;
+    background-color: #315292;
+    width: 100px;
+    height: auto;
+    color: white;
+    border: solid #000 3px;
+}
+
+#menu__toggle{
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #616161;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+
+    
+
+.produtos-area{
+    background-color: #fff;
+}
+.navbar .logo{
+    width: 45%;
+}
+
+.navbar-brand{
+    margin-left: 150px;
+}
+
+#pesquisar{
+    border: grey 1px solid;
+    border-radius: 20px;
+}
+
+#buscar{
+    border: grey 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    color: grey;
+}
+
+#buscar:hover{
+    background-color: #0077b6;
+    color: #ffffff;
+}
+.banner-home{
+    width: 100%;
+    height: 300px;
+    background-image: url(imagens/fotoMERCADO.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-home h1{
+    font-size: 70pt;
+    color: #315292;
+    font-weight: bold;
+}
+.produtos img{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+    object-fit: contain;
+}
+.produtos .card-produtos{
+    margin: 0px;
+    border: 1px solid rgb(226, 224, 224);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 2px 3px 15px -2px rgba(0, 0, 0, 0.233);
+    min-height: 400px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.produtos .card-produtos button{
+    margin-top: 10px;
+    background-color: #0077b6;
+    color: #fff;
+}
+.produtos .card-produtos figcaption{
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.produtos .card-produtos span{
+font-size: 20px;
+font-weight:600 ;
+color: #0077b6;
+}
+
+.container h2{
+    text-align: center;
+    color: #0077B6;
+}
+
+footer{
+    display: block;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.form-control{
+    margin: 10px;
+
+    
+}
+
+
+
+.visually-hidden{
+    font-size: 15pt;
+}
+
+footer p{
+    font-size: 10pt;
+}
+
+
+footer p .direitos{
+    text-align: center;
+}
+
+.menu{
+    margin: 150px 0 0 0;
+}
+
+
+
+@media only screen and (max-width: 1000px){
+    #carro{
+        display: none;
+    }
+    
+    #topo{
+        display: none;
+    }
+
+    header .navbar-brand img{
+        display: none;
+    }
+
+    .barras{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .busca{
+        margin-left: 150px;
+        margin-top: 5px;
+    }
+
+    header .navbar-brand{
+        margin-left: 50px;
+        margin-top: 5px;
+        display: inline-block;
+    }
+    #barra{
+        height: auto;
+        width: 250px;    
+    }
+
+
+}
+
+
+@media only screen and (max-width: 765px) {
+    .contato{
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: flex;
+        margin: 45px 45px 45px 45px;
+    }
+
+    #carro{
+        display: none;
+    }
+
+    header{
+        height: 80px;
+    }
+
+    header .navbar-brand img{
+        display: none;
+    }
+
+    .banner{
+        text-align: center;
+    }
+
+    .barras{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .busca{
+        margin-left: 150px;
+        margin-top: 5px;
+    }
+
+    header .navbar-brand{
+        margin-left: 50px;
+        margin-top: 5px;
+        display: inline-block;
+    }
+    #barra{
+        height: auto;
+        width: 250px;    
+    }
+}
